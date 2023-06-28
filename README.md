@@ -31,7 +31,7 @@ InteractWeb is a project that allows you to interact with a website from the rea
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/interactweb.git
+   git clone https://github.com/NCRT-DaZZle/InteractWeb
    ```
 
 2. Set up the Arduino:
@@ -79,10 +79,8 @@ InteractWeb is a project that allows you to interact with a website from the rea
 
 ## Contributing
 
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, please [create an issue](https://github.com/your-username/interactweb/issues) or submit a pull request.
+Contributions are welcome! If you have any ideas, suggestions, or bug reports, please [create an issue](https://github.com/NCRT-DaZZle/InteractWeb/issues) or submit a pull request.
 
 ## License
 
-[Choose an appropriate license for your project and specify it here.]
-
-[Include any additional sections or information relevant to your project.]
+MIT License
