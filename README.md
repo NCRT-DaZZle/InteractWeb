@@ -49,13 +49,13 @@ InteractWeb is a project that allows you to interact with a website from the rea
 4. Apply Django database migrations:
    
    ```bash
-   python InteractWeb/manage.py migrate
+   python manage.py migrate
    ```
 
 5. Start the server:
    
    ```bash
-   python InteractWeb/manage.py runserver
+   python manage.py runserver
    ```
 
 6. Open your web browser and navigate to `http://localhost:8000` to access the InteractWeb website.
