@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "A Svelte frontend for the InteractWeb aplication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NCRT-DaZZle/InteractWeb.git"
+  },
+  "keywords": [
+    "Svelte",
+    "Frontend",
+    "Backend",
+    "Arduino",
+    "Interaction"
+  ],
+  "author": "Vetle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NCRT-DaZZle/InteractWeb/issues"
+  },
+  "homepage": "https://github.com/NCRT-DaZZle/InteractWeb#readme",
+  "dependencies": {
+    "svelte": "^4.0.1"
+  }
+}
