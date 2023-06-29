@@ -1,81 +1,102 @@
 # InteractWeb
 
-InteractWeb is a project that allows you to interact with a website from the real world using an Arduino or other physical devices. It enables you to perform actions on the website by pressing a physical button or triggering other input events.
+InteractWeb is a project that enables interaction between the physical world and a web application. It allows you to control and monitor the web application using physical devices connected to an Arduino.
 
-## Table of Contents
+## Project Overview
 
-- [Introduction](#interactweb)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Technologies](#technologies)
-- [Contributing](#contributing)
-- [License](#license)
+The project consists of two main components:
 
-## Features
+1. Backend: Built with Django, the backend handles the web application's logic, database management, and communication with the Arduino.
 
-- Connect a physical device (e.g., Arduino) to a website.
-- Trigger website actions or update website content based on physical input events.
-- Real-time or near-real-time interaction between the physical device and the website.
+2. Frontend: Built with Svelte, the frontend provides the user interface for interacting with the web application and displays real-time data from the Arduino.
 
-## Getting Started
+## Prerequisites
 
-### Prerequisites
+To set up and run the InteractWeb project, you'll need the following:
 
-- [Arduino IDE](https://www.arduino.cc/en/software) or compatible software.
-- [Python](https://www.python.org) and pip (Python package manager) installed on your machine.
-- Basic knowledge of HTML, CSS, JavaScript, Arduino programming, and Django.
+- Python (version 3.6 or higher) installed on your machine.
+- Arduino board with the necessary components and sensors.
+- Basic knowledge of Django, Svelte, and web development.
 
-### Installation
+## Installation
+
+Follow these steps to install and set up the project:
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/NCRT-DaZZle/InteractWeb
+   https://github.com/NCRT-DaZZle/InteractWeb
    ```
 
-2. Set up the Arduino:
-   - Connect your Arduino board to your computer.
-   - Install the necessary software and drivers for your specific Arduino board.
-   - Open the `arduino/arduino_code.ino` file in the Arduino IDE and upload it to your Arduino board.
+2. Navigate to the project directory:
 
-3. Install the server dependencies:
-   
    ```bash
-   cd interactweb
+   cd InteractWeb
+   ```
+
+3. Install the required Python packages. Assuming you have pip installed, run:
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-4. Apply Django database migrations:
-   
-   ```bash
-   python InteractWeb/manage.py migrate
-   ```
+4. Set up the Django backend:
 
-5. Start the server:
-   
-   ```bash
-   python InteractWeb/manage.py runserver
-   ```
+   - Migrate the database:
 
-6. Open your web browser and navigate to `http://localhost:8000` to access the InteractWeb website.
+     ```bash
+     python manage.py migrate
+     ```
+
+   - Create a superuser (optional):
+
+     ```bash
+     python manage.py createsuperuser
+     ```
+
+5. Set up the Svelte frontend:
+
+   - Navigate to the `frontend` directory:
+
+     ```bash
+     cd frontend
+     ```
+
+   - Install the dependencies:
+
+     ```bash
+     npm install
+     ```
+
+6. Connect the Arduino to your machine and upload the Arduino code located in the `arduino` directory to your Arduino board.
 
 ## Usage
 
-1. Connect your Arduino to the computer via USB.
+To run the project, follow these steps:
 
-2. Press the physical button connected to the Arduino board.
+1. Start the Django backend server:
 
-3. Observe the corresponding action or update on the InteractWeb website.
+   ```bash
+   python manage.py runserver
+   ```
 
-## Technologies
+2. Start the Svelte frontend development server:
 
-- Arduino (or compatible microcontroller)
-- HTML, CSS, JavaScript
-- Python
-- Django (web framework)
-- WebSocket or RESTful API (for real-time communication)
-- [List any additional technologies or libraries used]
+   - Navigate to the `frontend` directory:
+
+     ```bash
+     cd frontend
+     ```
+
+   - Start the development server:
+
+     ```bash
+     npm run dev
+     ```
+
+3. Access the web application by visiting `http://localhost:5000` in your web browser.
+
+4. Interact with the physical devices connected to your Arduino, and observe the real-time data and functionality in the web application.
 
 ## Contributing
 
@@ -83,4 +104,4 @@ Contributions are welcome! If you have any ideas, suggestions, or bug reports, p
 
 ## License
 
-MIT License
+This project is licensed under the [MIT License](LICENSE).
